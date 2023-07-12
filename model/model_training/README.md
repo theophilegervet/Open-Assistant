@@ -4,6 +4,13 @@
 
 `pip install -e ..` (pyproject.toml resides in the parent directory)
 
+To install `flash_attn`:
+```
+git clone git@github.com:HazyResearch/flash-attention.git
+cd flash-attention
+pip install "flash_attn>=0.2.8" --no-build-isolation
+```
+
 Make sure the oasst_data module is installed
 
 ```bash

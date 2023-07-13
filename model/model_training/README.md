@@ -6,8 +6,7 @@
 
 To install `flash_attn`:
 ```
-git clone git@github.com:HazyResearch/flash-attention.git
-cd flash-attention
+conda install -c conda-forge cudatoolkit-dev
 pip install "flash_attn>=0.2.8" --no-build-isolation
 ```
 

@@ -499,7 +499,8 @@ lora-llama-13b:
   dtype: fp16
   log_dir: "llama_lora_log_13b"
   learning_rate: 5e-5
-  model_name: /home/ubuntu/llama_hf/13B
+#  model_name: /home/ubuntu/llama_hf/13B
+  model_name: openlm-research/open_llama_13b
   output_dir: llama_model_13b_lora
   weight_decay: 0.0
   max_length: 2048

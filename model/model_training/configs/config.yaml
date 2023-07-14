@@ -496,8 +496,7 @@ llama-30b-pretrain:
   save_total_limit: 2
 
 lora-llama-13b:
-#  dtype: fp16
-  dtype: fp32  # TODO Error with fp16 and oom with fp32 and batch size 1
+  dtype: fp16
   log_dir: "llama_lora_log_13b"
   learning_rate: 5e-5
 #  model_name: /home/ubuntu/llama_hf/13B

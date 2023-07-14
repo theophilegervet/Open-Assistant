@@ -1,6 +1,7 @@
 SFT
 ```
 python trainer_sft.py --configs lora-llama-13b webgpt_dataset_only --wandb-entity tgervet
+python trainer_sft.py --configs lora-llama-13b oasst_export_eu --wandb-entity tgervet
 ```
 
 Reward model

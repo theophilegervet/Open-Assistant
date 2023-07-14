@@ -497,7 +497,7 @@ llama-30b-pretrain:
 
 lora-llama-13b:
 #  dtype: fp16
-  dtype: fp32
+  dtype: fp32  # TODO Error with fp16 and oom with fp32 and batch size 1
   log_dir: "llama_lora_log_13b"
   learning_rate: 5e-5
 #  model_name: /home/ubuntu/llama_hf/13B
@@ -527,15 +527,18 @@ lora-llama-30b:
   dtype: fp16
   log_dir: "llama_lora_log_30b"
   learning_rate: 5e-5
-  model_name: /home/ubuntu/llama_hf/30B
+#  model_name: /home/ubuntu/llama_hf/30B
+  model_name: huggyllama/llama-30b
   output_dir: llama_model_30b_lora
   weight_decay: 0.0
   max_length: 2048
   warmup_steps: 300
   gradient_checkpointing: true
   gradient_accumulation_steps: 1
-  per_device_train_batch_size: 4
-  per_device_eval_batch_size: 2
+#  per_device_train_batch_size: 4
+#  per_device_eval_batch_size: 2
+  per_device_train_batch_size: 1
+  per_device_eval_batch_size: 1
   eval_steps: 500
   num_train_epochs: 12
   save_total_limit: 2

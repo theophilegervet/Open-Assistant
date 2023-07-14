@@ -307,10 +307,8 @@ llama-13b:
   warmup_steps: 100
   gradient_checkpointing: true
   gradient_accumulation_steps: 2
-#  per_device_train_batch_size: 4
-#  per_device_eval_batch_size: 8
-  per_device_train_batch_size: 1
-  per_device_eval_batch_size: 2
+  per_device_train_batch_size: 4
+  per_device_eval_batch_size: 8
   eval_steps: 50
   save_steps: 1000
   num_train_epochs: 8
@@ -509,8 +507,10 @@ lora-llama-13b:
   warmup_steps: 300
   gradient_checkpointing: true
   gradient_accumulation_steps: 1
-  per_device_train_batch_size: 24
-  per_device_eval_batch_size: 5
+#  per_device_train_batch_size: 24
+#  per_device_eval_batch_size: 5
+  per_device_train_batch_size: 12
+  per_device_eval_batch_size: 3
   eval_steps: 500
   num_train_epochs: 12
   save_total_limit: 2

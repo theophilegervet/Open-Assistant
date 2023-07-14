@@ -104,8 +104,6 @@ class SFTTrainer(Trainer):
         ignore_keys: Optional[List[str]] = None,
     ) -> Tuple[Optional[torch.Tensor], Optional[torch.Tensor], Optional[torch.Tensor]]:
         with torch.no_grad():
-            if not model.training:
-                breakpoint()  # TODO Debug why "RuntimeError: expected scalar type Half but found Float" during eval
             loss, logits, labels, labels_mask = self._compute_loss(model, inputs)
             labels[~labels_mask.bool()] = -100  # padding_index
 

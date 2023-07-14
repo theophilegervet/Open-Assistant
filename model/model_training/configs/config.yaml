@@ -276,7 +276,7 @@ falcon-7b:
   residual_dropout_lima: true
 
 llama-7b:
-  dtype: fp16
+  dtype: fp16  # TODO ValueError: Attempting to unscale FP16 gradients
   log_dir: "llama_log_7b"
   learning_rate: 1e-5
 #  model_name: /home/ubuntu/llama_hf/7B
@@ -296,7 +296,7 @@ llama-7b:
   use_flash_attention: true
 
 llama-13b:
-  dtype: fp16
+  dtype: fp16  # TODO ValueError: Attempting to unscale FP16 gradients or OOM error with fp32
   log_dir: "llama_log_13b"
   learning_rate: 1e-5
 #  model_name: /home/ubuntu/llama_hf/13B

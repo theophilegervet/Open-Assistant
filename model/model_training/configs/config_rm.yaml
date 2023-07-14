@@ -42,6 +42,7 @@ defaults_rm:
   datasets_extra: []
   metrics: ["accuracy", "kendalltau"]
   residual_dropout_lima: false
+  use_system_tag: false
   deepspeed_config: configs/zero_config.json
   max_replies: 5
 

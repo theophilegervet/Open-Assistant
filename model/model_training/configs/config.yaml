@@ -280,8 +280,8 @@ llama-7b:
   log_dir: "llama_log_7b"
   learning_rate: 1e-5
 #  model_name: /home/ubuntu/llama_hf/7B
-#  model_name: huggyllama/llama-7b
-  model_name: decapoda-research/llama-7b-hf
+  model_name: huggyllama/llama-7b
+#  model_name: decapoda-research/llama-7b-hf  # TODO ValueError: Tokenizer class LLaMATokenizer does not exist or is not currently imported.
   output_dir: llama_model_7b
   weight_decay: 0.0
 #  max_length: 2048

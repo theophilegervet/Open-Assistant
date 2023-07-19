@@ -295,7 +295,7 @@ llama-7b:
   save_steps: 500
   num_train_epochs: 8
   save_total_limit: 4
-  use_flash_attention: false
+  use_flash_attention: true
 
 # DEBUG
 llama-7b-no-flash:
@@ -317,7 +317,7 @@ llama-7b-no-flash:
   save_steps: 500
   num_train_epochs: 8
   save_total_limit: 4
-  use_flash_attention: true
+  use_flash_attention: false
 
 llama-13b:
   dtype: fp16

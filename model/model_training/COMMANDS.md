@@ -3,6 +3,9 @@ SFT
 python trainer_sft.py --configs llama-7b webgpt_dataset_only --wandb-entity tgervet
 python trainer_sft.py --configs pythia-6.9B webgpt_dataset_only --wandb-entity tgervet
 
+deepspeed trainer_sft.py --configs defaults llama-7b webgpt_dataset_only --deepspeed
+deepspeed trainer_sft.py --configs defaults pythia-6.9B webgpt_dataset_only --deepspeed
+
 python trainer_sft.py --configs llama-13b webgpt_dataset_only --wandb-entity tgervet
 python trainer_sft.py --configs llama-7b-fp32 webgpt_dataset_only --wandb-entity tgervet
 

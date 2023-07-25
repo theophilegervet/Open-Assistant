@@ -307,7 +307,7 @@ llama-7b-fp32:
   output_dir: llama_model_7b
   weight_decay: 0.0
 #  max_length: 2048
-  max_length: 128
+  max_length: 32
   warmup_steps: 100
   gradient_checkpointing: true
   gradient_accumulation_steps: 2
@@ -328,7 +328,7 @@ llama-13b:
   output_dir: llama_model_13b
   weight_decay: 0.0
 #  max_length: 2048
-  max_length: 128
+  max_length: 32
   warmup_steps: 100
   gradient_checkpointing: true
   gradient_accumulation_steps: 2
